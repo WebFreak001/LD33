@@ -1,0 +1,3353 @@
+[
+ {
+  "name" : "fx.bar",
+  "kind" : "module",
+  "file" : "source\\fx\\bar.d",
+  "members" : [
+   {
+    "name" : "d2d",
+    "kind" : "import",
+    "line" : 3,
+    "char" : 8,
+    "protection" : "private"
+   },
+   {
+    "name" : "std.file",
+    "kind" : "import",
+    "line" : 5,
+    "char" : 8,
+    "protection" : "private"
+   },
+   {
+    "name" : "BarShader",
+    "kind" : "class",
+    "line" : 7,
+    "char" : 1,
+    "base" : "d2d.rendering.shaderprogram.ShaderProgram",
+    "members" : [
+     {
+      "name" : "this",
+      "kind" : "constructor",
+      "line" : 9,
+      "char" : 2,
+      "deco" : "FZC2fx3bar9BarShader",
+      "originalType" : "()",
+      "endline" : 36,
+      "endchar" : 2
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "name" : "fx.view",
+  "kind" : "module",
+  "file" : "source\\fx\\view.d",
+  "members" : [
+   {
+    "name" : "d2d",
+    "kind" : "import",
+    "line" : 3,
+    "char" : 8,
+    "protection" : "private"
+   },
+   {
+    "name" : "std.file",
+    "kind" : "import",
+    "line" : 5,
+    "char" : 8,
+    "protection" : "private"
+   },
+   {
+    "name" : "ViewIndicatorShader",
+    "kind" : "class",
+    "line" : 7,
+    "char" : 1,
+    "base" : "d2d.rendering.shaderprogram.ShaderProgram",
+    "members" : [
+     {
+      "name" : "this",
+      "kind" : "constructor",
+      "line" : 9,
+      "char" : 2,
+      "deco" : "FZC2fx4view19ViewIndicatorShader",
+      "originalType" : "()",
+      "endline" : 35,
+      "endchar" : 2
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "name" : "game.collectable",
+  "kind" : "module",
+  "file" : "source\\game\\collectable.d",
+  "members" : [
+   {
+    "name" : "d2d",
+    "kind" : "import",
+    "line" : 3,
+    "char" : 8,
+    "protection" : "private"
+   },
+   {
+    "name" : "CollectableItems",
+    "kind" : "enum",
+    "line" : 5,
+    "char" : 1,
+    "baseDeco" : "i",
+    "members" : [
+     {
+      "name" : "SandwichBottom",
+      "kind" : "enum member",
+      "value" : "1000",
+      "line" : 7,
+      "char" : 2
+     },
+     {
+      "name" : "Sandwich",
+      "kind" : "enum member",
+      "value" : "1001",
+      "line" : 8,
+      "char" : 2
+     },
+     {
+      "name" : "SandwichBread",
+      "kind" : "enum member",
+      "value" : "1002",
+      "line" : 9,
+      "char" : 2
+     },
+     {
+      "name" : "Plank",
+      "kind" : "enum member",
+      "value" : "1003",
+      "line" : 10,
+      "char" : 2
+     },
+     {
+      "name" : "Nail",
+      "kind" : "enum member",
+      "value" : "1004",
+      "line" : 11,
+      "char" : 2
+     },
+     {
+      "name" : "String",
+      "kind" : "enum member",
+      "value" : "1005",
+      "line" : 12,
+      "char" : 2
+     },
+     {
+      "name" : "Axe",
+      "kind" : "enum member",
+      "value" : "1006",
+      "line" : 13,
+      "char" : 2
+     },
+     {
+      "name" : "Stick",
+      "kind" : "enum member",
+      "value" : "1007",
+      "line" : 14,
+      "char" : 2
+     },
+     {
+      "name" : "Bottle",
+      "kind" : "enum member",
+      "value" : "1008",
+      "line" : 15,
+      "char" : 2
+     },
+     {
+      "name" : "Glove",
+      "kind" : "enum member",
+      "value" : "1009",
+      "line" : 16,
+      "char" : 2
+     },
+     {
+      "name" : "Salt",
+      "kind" : "enum member",
+      "value" : "1010",
+      "line" : 17,
+      "char" : 2
+     },
+     {
+      "name" : "Cat",
+      "kind" : "enum member",
+      "value" : "1011",
+      "line" : 18,
+      "char" : 2
+     }
+    ]
+   },
+   {
+    "name" : "Collectable",
+    "kind" : "class",
+    "line" : 21,
+    "char" : 1,
+    "members" : [
+     {
+      "name" : "rect",
+      "kind" : "variable",
+      "line" : 23,
+      "char" : 17,
+      "deco" : "C3d2d9rendering14rectangleshape14RectangleShape",
+      "originalType" : "RectangleShape",
+      "offset" : 8
+     },
+     {
+      "name" : "stealWorth",
+      "kind" : "variable",
+      "line" : 24,
+      "char" : 8,
+      "deco" : "f",
+      "offset" : 12
+     },
+     {
+      "name" : "id",
+      "kind" : "variable",
+      "line" : 25,
+      "char" : 6,
+      "deco" : "i",
+      "offset" : 16
+     },
+     {
+      "name" : "this",
+      "kind" : "constructor",
+      "line" : 27,
+      "char" : 2,
+      "deco" : "FC3d2d9rendering7texture7TexturefS4gl3n6linalg17__T6VectorTfVii2Z6VectorS4gl3n6linalg17__T6VectorTfVii4Z6VectoriZC4game11collectable11Collectable",
+      "originalType" : "(Texture items, float worth, vec2 pos, vec4 uv, int id)",
+      "parameters" : [
+       {
+        "name" : "items",
+        "deco" : "C3d2d9rendering7texture7Texture"
+       },
+       {
+        "name" : "worth",
+        "deco" : "f"
+       },
+       {
+        "name" : "pos",
+        "deco" : "S4gl3n6linalg17__T6VectorTfVii2Z6Vector"
+       },
+       {
+        "name" : "uv",
+        "deco" : "S4gl3n6linalg17__T6VectorTfVii4Z6Vector"
+       },
+       {
+        "name" : "id",
+        "deco" : "i"
+       }
+      ],
+      "endline" : 32,
+      "endchar" : 2
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "name" : "game.commonlevel",
+  "kind" : "module",
+  "file" : "source\\game\\commonlevel.d",
+  "members" : [
+   {
+    "name" : "d2d",
+    "kind" : "import",
+    "line" : 3,
+    "char" : 8,
+    "protection" : "private"
+   },
+   {
+    "name" : "game.scene",
+    "kind" : "import",
+    "line" : 4,
+    "char" : 8,
+    "protection" : "private"
+   },
+   {
+    "name" : "fx.bar",
+    "kind" : "import",
+    "line" : 5,
+    "char" : 8,
+    "protection" : "private"
+   },
+   {
+    "name" : "std.file",
+    "kind" : "import",
+    "line" : 6,
+    "char" : 8,
+    "protection" : "private"
+   },
+   {
+    "name" : "std.random",
+    "kind" : "import",
+    "line" : 7,
+    "char" : 8,
+    "protection" : "private"
+   },
+   {
+    "name" : "game.player",
+    "kind" : "import",
+    "line" : 8,
+    "char" : 8,
+    "protection" : "private"
+   },
+   {
+    "name" : "game.npc",
+    "kind" : "import",
+    "line" : 9,
+    "char" : 8,
+    "protection" : "private"
+   },
+   {
+    "name" : "game.collectable",
+    "kind" : "import",
+    "line" : 10,
+    "char" : 8,
+    "protection" : "private"
+   },
+   {
+    "name" : "game.interactable",
+    "kind" : "import",
+    "line" : 11,
+    "char" : 8,
+    "protection" : "private"
+   },
+   {
+    "name" : "game.gameover",
+    "kind" : "import",
+    "line" : 12,
+    "char" : 8,
+    "protection" : "private"
+   },
+   {
+    "name" : "ld33",
+    "kind" : "import",
+    "line" : 13,
+    "char" : 8,
+    "protection" : "private"
+   },
+   {
+    "name" : "Keyboard",
+    "kind" : "alias",
+    "line" : 15,
+    "char" : 1,
+    "deco" : "Hwb"
+   },
+   {
+    "name" : "CommonLevel",
+    "kind" : "class",
+    "line" : 17,
+    "char" : 1,
+    "base" : "game.scene.Scene",
+    "members" : [
+     {
+      "name" : "levelTex",
+      "kind" : "variable",
+      "line" : 19,
+      "char" : 10,
+      "deco" : "C3d2d9rendering7texture7Texture",
+      "originalType" : "Texture",
+      "offset" : 16
+     },
+     {
+      "name" : "items",
+      "kind" : "variable",
+      "line" : 19,
+      "char" : 20,
+      "deco" : "C3d2d9rendering7texture7Texture",
+      "originalType" : "Texture",
+      "offset" : 20
+     },
+     {
+      "name" : "barTex",
+      "kind" : "variable",
+      "line" : 19,
+      "char" : 27,
+      "deco" : "C3d2d9rendering7texture7Texture",
+      "originalType" : "Texture",
+      "offset" : 24
+     },
+     {
+      "name" : "barShader",
+      "kind" : "variable",
+      "line" : 20,
+      "char" : 12,
+      "deco" : "C2fx3bar9BarShader",
+      "originalType" : "BarShader",
+      "offset" : 28
+     },
+     {
+      "name" : "pickup",
+      "kind" : "variable",
+      "line" : 21,
+      "char" : 8,
+      "deco" : "C3d2d5audio5sound5Sound",
+      "originalType" : "Sound",
+      "offset" : 32
+     },
+     {
+      "name" : "seen",
+      "kind" : "variable",
+      "line" : 21,
+      "char" : 16,
+      "deco" : "C3d2d5audio5sound5Sound",
+      "originalType" : "Sound",
+      "offset" : 36
+     },
+     {
+      "name" : "gameover",
+      "kind" : "variable",
+      "line" : 21,
+      "char" : 22,
+      "deco" : "C3d2d5audio5sound5Sound",
+      "originalType" : "Sound",
+      "offset" : 40
+     },
+     {
+      "name" : "bar1",
+      "kind" : "variable",
+      "line" : 22,
+      "char" : 17,
+      "deco" : "C3d2d9rendering14rectangleshape14RectangleShape",
+      "originalType" : "RectangleShape",
+      "offset" : 44
+     },
+     {
+      "name" : "bar2",
+      "kind" : "variable",
+      "line" : 22,
+      "char" : 23,
+      "deco" : "C3d2d9rendering14rectangleshape14RectangleShape",
+      "originalType" : "RectangleShape",
+      "offset" : 48
+     },
+     {
+      "name" : "level",
+      "kind" : "variable",
+      "line" : 23,
+      "char" : 17,
+      "deco" : "C3d2d9rendering14rectangleshape14RectangleShape",
+      "originalType" : "RectangleShape",
+      "offset" : 52
+     },
+     {
+      "name" : "collectables",
+      "kind" : "variable",
+      "line" : 24,
+      "char" : 16,
+      "deco" : "AC4game11collectable11Collectable",
+      "offset" : 56
+     },
+     {
+      "name" : "interactables",
+      "kind" : "variable",
+      "line" : 25,
+      "char" : 17,
+      "deco" : "AC4game12interactable12Interactable",
+      "offset" : 64
+     },
+     {
+      "name" : "inventory",
+      "kind" : "variable",
+      "line" : 26,
+      "char" : 17,
+      "deco" : "G3C4game11collectable11Collectable",
+      "offset" : 72
+     },
+     {
+      "name" : "keys",
+      "kind" : "variable",
+      "line" : 27,
+      "char" : 11,
+      "deco" : "Hwb",
+      "originalType" : "Keyboard",
+      "offset" : 84
+     },
+     {
+      "name" : "player",
+      "kind" : "variable",
+      "line" : 28,
+      "char" : 9,
+      "deco" : "C4game6player6Player",
+      "originalType" : "Player",
+      "offset" : 88
+     },
+     {
+      "name" : "attention",
+      "kind" : "variable",
+      "line" : 29,
+      "char" : 8,
+      "deco" : "f",
+      "init" : "0.000000F",
+      "offset" : 92
+     },
+     {
+      "name" : "need",
+      "kind" : "variable",
+      "line" : 29,
+      "char" : 23,
+      "deco" : "f",
+      "init" : "0.000000F",
+      "offset" : 96
+     },
+     {
+      "name" : "font",
+      "kind" : "variable",
+      "line" : 30,
+      "char" : 10,
+      "deco" : "C3d2d4font7ttffont7TTFFont",
+      "originalType" : "TTFFont",
+      "offset" : 100
+     },
+     {
+      "name" : "seenText",
+      "kind" : "variable",
+      "line" : 31,
+      "char" : 10,
+      "deco" : "AC3d2d4font5itext5IText",
+      "offset" : 104
+     },
+     {
+      "name" : "npcs",
+      "kind" : "variable",
+      "line" : 32,
+      "char" : 8,
+      "deco" : "AC4game3npc3NPC",
+      "offset" : 112
+     },
+     {
+      "name" : "load",
+      "kind" : "function",
+      "line" : 34,
+      "char" : 16,
+      "storageClass" : [
+       "override"
+      ],
+      "deco" : "FZv",
+      "endline" : 57,
+      "endchar" : 2,
+      "overrides" : [
+       "game.scene.Scene.load"
+      ]
+     },
+     {
+      "name" : "dispose",
+      "kind" : "function",
+      "line" : 59,
+      "char" : 16,
+      "storageClass" : [
+       "override"
+      ],
+      "deco" : "FZv",
+      "endline" : 77,
+      "endchar" : 2,
+      "overrides" : [
+       "game.scene.Scene.dispose"
+      ]
+     },
+     {
+      "name" : "onEvent",
+      "kind" : "function",
+      "line" : 79,
+      "char" : 16,
+      "storageClass" : [
+       "override"
+      ],
+      "deco" : "FS3d2d6window11windowevent11WindowEventZv",
+      "originalType" : "void(Event event)",
+      "parameters" : [
+       {
+        "name" : "event",
+        "deco" : "S3d2d6window11windowevent11WindowEvent"
+       }
+      ],
+      "endline" : 124,
+      "endchar" : 2,
+      "overrides" : [
+       "game.scene.Scene.onEvent"
+      ]
+     },
+     {
+      "name" : "isRelevant",
+      "kind" : "function",
+      "line" : 126,
+      "char" : 16,
+      "storageClass" : [
+       "abstract"
+      ],
+      "deco" : "FiZb",
+      "parameters" : [
+       {
+        "name" : "id",
+        "deco" : "i"
+       }
+      ]
+     },
+     {
+      "name" : "conditionsMet",
+      "kind" : "function",
+      "line" : 128,
+      "char" : 16,
+      "storageClass" : [
+       "abstract"
+      ],
+      "deco" : "FZb"
+     },
+     {
+      "name" : "prepareNext",
+      "kind" : "function",
+      "line" : 130,
+      "char" : 17,
+      "storageClass" : [
+       "abstract"
+      ],
+      "deco" : "FZC4game5scene5Scene"
+     },
+     {
+      "name" : "checkSuspect",
+      "kind" : "function",
+      "line" : 132,
+      "char" : 7,
+      "deco" : "FS4gl3n6linalg17__T6VectorTfVii2Z6VectorfZv",
+      "originalType" : "void(vec2 pos, float penalty)",
+      "parameters" : [
+       {
+        "name" : "pos",
+        "deco" : "S4gl3n6linalg17__T6VectorTfVii2Z6Vector"
+       },
+       {
+        "name" : "penalty",
+        "deco" : "f"
+       }
+      ],
+      "endline" : 153,
+      "endchar" : 2
+     },
+     {
+      "name" : "isKeyDown",
+      "kind" : "function",
+      "line" : 155,
+      "char" : 7,
+      "deco" : "FwZb",
+      "parameters" : [
+       {
+        "name" : "key",
+        "deco" : "w"
+       }
+      ],
+      "endline" : 158,
+      "endchar" : 2
+     },
+     {
+      "name" : "update",
+      "kind" : "function",
+      "line" : 160,
+      "char" : 16,
+      "storageClass" : [
+       "override"
+      ],
+      "deco" : "FfZv",
+      "parameters" : [
+       {
+        "name" : "delta",
+        "deco" : "f"
+       }
+      ],
+      "endline" : 194,
+      "endchar" : 2,
+      "overrides" : [
+       "game.scene.Scene.update"
+      ]
+     },
+     {
+      "name" : "draw",
+      "kind" : "function",
+      "line" : 196,
+      "char" : 16,
+      "storageClass" : [
+       "override"
+      ],
+      "deco" : "FC3d2d9rendering13irendertarget13IRenderTargetZv",
+      "parameters" : [
+       {
+        "name" : "target",
+        "deco" : "C3d2d9rendering13irendertarget13IRenderTarget"
+       }
+      ],
+      "endline" : 238,
+      "endchar" : 2,
+      "overrides" : [
+       "game.scene.Scene.draw"
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "name" : "game.condition",
+  "kind" : "module",
+  "file" : "source\\game\\condition.d",
+  "members" : [
+   {
+    "name" : "d2d",
+    "kind" : "import",
+    "line" : 3,
+    "char" : 8,
+    "protection" : "private"
+   },
+   {
+    "name" : "ld33",
+    "kind" : "import",
+    "line" : 5,
+    "char" : 8,
+    "protection" : "private"
+   },
+   {
+    "name" : "game.interactable",
+    "kind" : "import",
+    "line" : 6,
+    "char" : 8,
+    "protection" : "private"
+   },
+   {
+    "name" : "game.commonlevel",
+    "kind" : "import",
+    "line" : 7,
+    "char" : 8,
+    "protection" : "private"
+   },
+   {
+    "name" : "game.player",
+    "kind" : "import",
+    "line" : 8,
+    "char" : 8,
+    "protection" : "private"
+   },
+   {
+    "name" : "Condition",
+    "kind" : "class",
+    "line" : 10,
+    "char" : 1,
+    "base" : "game.interactable.Interactable",
+    "members" : [
+     {
+      "name" : "level",
+      "kind" : "variable",
+      "line" : 12,
+      "char" : 14,
+      "deco" : "C4game11commonlevel11CommonLevel",
+      "originalType" : "CommonLevel",
+      "offset" : 12
+     },
+     {
+      "name" : "indicator",
+      "kind" : "variable",
+      "line" : 13,
+      "char" : 17,
+      "deco" : "C3d2d9rendering14rectangleshape14RectangleShape",
+      "originalType" : "RectangleShape",
+      "offset" : 16
+     },
+     {
+      "name" : "id",
+      "kind" : "variable",
+      "line" : 14,
+      "char" : 6,
+      "deco" : "i",
+      "offset" : 20
+     },
+     {
+      "name" : "position",
+      "kind" : "variable",
+      "line" : 15,
+      "char" : 7,
+      "deco" : "S4gl3n6linalg17__T6VectorTfVii2Z6Vector",
+      "originalType" : "vec2",
+      "offset" : 24
+     },
+     {
+      "name" : "solved",
+      "kind" : "variable",
+      "line" : 16,
+      "char" : 7,
+      "deco" : "b",
+      "init" : "false",
+      "offset" : 32
+     },
+     {
+      "name" : "this",
+      "kind" : "constructor",
+      "line" : 18,
+      "char" : 2,
+      "deco" : "FC4game11commonlevel11CommonLevelC3d2d9rendering7texture7TextureS4gl3n6linalg17__T6VectorTfVii2Z6VectorS4gl3n6linalg17__T6VectorTfVii4Z6VectoriZC4game9condition9Condition",
+      "originalType" : "(CommonLevel level, Texture tex, vec2 pos, vec4 uv, int id)",
+      "parameters" : [
+       {
+        "name" : "level",
+        "deco" : "C4game11commonlevel11CommonLevel"
+       },
+       {
+        "name" : "tex",
+        "deco" : "C3d2d9rendering7texture7Texture"
+       },
+       {
+        "name" : "pos",
+        "deco" : "S4gl3n6linalg17__T6VectorTfVii2Z6Vector"
+       },
+       {
+        "name" : "uv",
+        "deco" : "S4gl3n6linalg17__T6VectorTfVii4Z6Vector"
+       },
+       {
+        "name" : "id",
+        "deco" : "i"
+       }
+      ],
+      "endline" : 25,
+      "endchar" : 2
+     },
+     {
+      "name" : "draw",
+      "kind" : "function",
+      "line" : 27,
+      "char" : 16,
+      "storageClass" : [
+       "override"
+      ],
+      "deco" : "FC3d2d9rendering13irendertarget13IRenderTargetZv",
+      "parameters" : [
+       {
+        "name" : "target",
+        "deco" : "C3d2d9rendering13irendertarget13IRenderTarget"
+       }
+      ],
+      "endline" : 34,
+      "endchar" : 2,
+      "overrides" : [
+       "game.interactable.Interactable.draw"
+      ]
+     },
+     {
+      "name" : "customIntersect",
+      "kind" : "function",
+      "line" : 36,
+      "char" : 16,
+      "storageClass" : [
+       "override"
+      ],
+      "deco" : "FC4game6player6PlayerZb",
+      "parameters" : [
+       {
+        "name" : "player",
+        "deco" : "C4game6player6Player"
+       }
+      ],
+      "endline" : 42,
+      "endchar" : 2,
+      "overrides" : [
+       "game.interactable.Interactable.customIntersect"
+      ]
+     },
+     {
+      "name" : "interact",
+      "kind" : "function",
+      "line" : 44,
+      "char" : 16,
+      "storageClass" : [
+       "override"
+      ],
+      "deco" : "FZb",
+      "endline" : 57,
+      "endchar" : 2,
+      "overrides" : [
+       "game.interactable.Interactable.interact"
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "name" : "game.deposit",
+  "kind" : "module",
+  "file" : "source\\game\\deposit.d",
+  "members" : [
+   {
+    "name" : "d2d",
+    "kind" : "import",
+    "line" : 3,
+    "char" : 8,
+    "protection" : "private"
+   },
+   {
+    "name" : "ld33",
+    "kind" : "import",
+    "line" : 5,
+    "char" : 8,
+    "protection" : "private"
+   },
+   {
+    "name" : "game.interactable",
+    "kind" : "import",
+    "line" : 6,
+    "char" : 8,
+    "protection" : "private"
+   },
+   {
+    "name" : "game.commonlevel",
+    "kind" : "import",
+    "line" : 7,
+    "char" : 8,
+    "protection" : "private"
+   },
+   {
+    "name" : "Deposit",
+    "kind" : "class",
+    "line" : 9,
+    "char" : 1,
+    "base" : "game.interactable.Interactable",
+    "members" : [
+     {
+      "name" : "level",
+      "kind" : "variable",
+      "line" : 11,
+      "char" : 14,
+      "deco" : "C4game11commonlevel11CommonLevel",
+      "originalType" : "CommonLevel",
+      "offset" : 12
+     },
+     {
+      "name" : "this",
+      "kind" : "constructor",
+      "line" : 13,
+      "char" : 2,
+      "deco" : "FC4game11commonlevel11CommonLevelC3d2d9rendering14rectangleshape14RectangleShapeZC4game7deposit7Deposit",
+      "originalType" : "(CommonLevel level, RectangleShape rect)",
+      "parameters" : [
+       {
+        "name" : "level",
+        "deco" : "C4game11commonlevel11CommonLevel"
+       },
+       {
+        "name" : "rect",
+        "deco" : "C3d2d9rendering14rectangleshape14RectangleShape"
+       }
+      ],
+      "endline" : 17,
+      "endchar" : 2
+     },
+     {
+      "name" : "interact",
+      "kind" : "function",
+      "line" : 19,
+      "char" : 16,
+      "storageClass" : [
+       "override"
+      ],
+      "deco" : "FZb",
+      "endline" : 31,
+      "endchar" : 2,
+      "overrides" : [
+       "game.interactable.Interactable.interact"
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "name" : "game.endscreen",
+  "kind" : "module",
+  "file" : "source\\game\\endscreen.d",
+  "members" : [
+   {
+    "name" : "d2d",
+    "kind" : "import",
+    "line" : 3,
+    "char" : 8,
+    "protection" : "private"
+   },
+   {
+    "name" : "game.scene",
+    "kind" : "import",
+    "line" : 4,
+    "char" : 8,
+    "protection" : "private"
+   },
+   {
+    "name" : "std.file",
+    "kind" : "import",
+    "line" : 5,
+    "char" : 8,
+    "protection" : "private"
+   },
+   {
+    "name" : "std.format",
+    "kind" : "import",
+    "line" : 6,
+    "char" : 8,
+    "protection" : "private"
+   },
+   {
+    "name" : "ld33",
+    "kind" : "import",
+    "line" : 7,
+    "char" : 8,
+    "protection" : "private"
+   },
+   {
+    "name" : "EndScreen",
+    "kind" : "class",
+    "line" : 9,
+    "char" : 1,
+    "base" : "game.scene.Scene",
+    "members" : [
+     {
+      "name" : "font",
+      "kind" : "variable",
+      "line" : 11,
+      "char" : 10,
+      "deco" : "C3d2d4font7ttffont7TTFFont",
+      "originalType" : "TTFFont",
+      "offset" : 16
+     },
+     {
+      "name" : "header",
+      "kind" : "variable",
+      "line" : 12,
+      "char" : 10,
+      "deco" : "C3d2d4font7ttftext7TTFText",
+      "originalType" : "TTFText",
+      "offset" : 20
+     },
+     {
+      "name" : "content",
+      "kind" : "variable",
+      "line" : 12,
+      "char" : 18,
+      "deco" : "C3d2d4font7ttftext7TTFText",
+      "originalType" : "TTFText",
+      "offset" : 24
+     },
+     {
+      "name" : "end",
+      "kind" : "variable",
+      "line" : 13,
+      "char" : 8,
+      "deco" : "C3d2d5audio5sound5Sound",
+      "originalType" : "Sound",
+      "offset" : 28
+     },
+     {
+      "name" : "load",
+      "kind" : "function",
+      "line" : 15,
+      "char" : 16,
+      "storageClass" : [
+       "override"
+      ],
+      "deco" : "FZv",
+      "endline" : 31,
+      "endchar" : 2,
+      "overrides" : [
+       "game.scene.Scene.load"
+      ]
+     },
+     {
+      "name" : "dispose",
+      "kind" : "function",
+      "line" : 33,
+      "char" : 16,
+      "storageClass" : [
+       "override"
+      ],
+      "deco" : "FZv",
+      "endline" : 38,
+      "endchar" : 2,
+      "overrides" : [
+       "game.scene.Scene.dispose"
+      ]
+     },
+     {
+      "name" : "onEvent",
+      "kind" : "function",
+      "line" : 40,
+      "char" : 16,
+      "storageClass" : [
+       "override"
+      ],
+      "deco" : "FS3d2d6window11windowevent11WindowEventZv",
+      "originalType" : "void(Event event)",
+      "parameters" : [
+       {
+        "name" : "event",
+        "deco" : "S3d2d6window11windowevent11WindowEvent"
+       }
+      ],
+      "endline" : 46,
+      "endchar" : 2,
+      "overrides" : [
+       "game.scene.Scene.onEvent"
+      ]
+     },
+     {
+      "name" : "update",
+      "kind" : "function",
+      "line" : 48,
+      "char" : 16,
+      "storageClass" : [
+       "override"
+      ],
+      "deco" : "FfZv",
+      "parameters" : [
+       {
+        "name" : "delta",
+        "deco" : "f"
+       }
+      ],
+      "endline" : 50,
+      "endchar" : 2,
+      "overrides" : [
+       "game.scene.Scene.update"
+      ]
+     },
+     {
+      "name" : "draw",
+      "kind" : "function",
+      "line" : 52,
+      "char" : 16,
+      "storageClass" : [
+       "override"
+      ],
+      "deco" : "FC3d2d9rendering13irendertarget13IRenderTargetZv",
+      "parameters" : [
+       {
+        "name" : "target",
+        "deco" : "C3d2d9rendering13irendertarget13IRenderTarget"
+       }
+      ],
+      "endline" : 56,
+      "endchar" : 2,
+      "overrides" : [
+       "game.scene.Scene.draw"
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "name" : "game.fruits",
+  "kind" : "module",
+  "file" : "source\\game\\fruits.d",
+  "members" : [
+   {
+    "name" : "d2d",
+    "kind" : "import",
+    "line" : 3,
+    "char" : 8,
+    "protection" : "private"
+   },
+   {
+    "name" : "ld33",
+    "kind" : "import",
+    "line" : 5,
+    "char" : 8,
+    "protection" : "private"
+   },
+   {
+    "name" : "game.interactable",
+    "kind" : "import",
+    "line" : 6,
+    "char" : 8,
+    "protection" : "private"
+   },
+   {
+    "name" : "game.commonlevel",
+    "kind" : "import",
+    "line" : 7,
+    "char" : 8,
+    "protection" : "private"
+   },
+   {
+    "name" : "Fruits",
+    "kind" : "class",
+    "line" : 9,
+    "char" : 1,
+    "base" : "game.interactable.Interactable",
+    "members" : [
+     {
+      "name" : "level",
+      "kind" : "variable",
+      "line" : 11,
+      "char" : 14,
+      "deco" : "C4game11commonlevel11CommonLevel",
+      "originalType" : "CommonLevel",
+      "offset" : 12
+     },
+     {
+      "name" : "destroyed",
+      "kind" : "variable",
+      "line" : 12,
+      "char" : 7,
+      "deco" : "S4gl3n6linalg17__T6VectorTfVii4Z6Vector",
+      "originalType" : "vec4",
+      "offset" : 16
+     },
+     {
+      "name" : "alive",
+      "kind" : "variable",
+      "line" : 13,
+      "char" : 7,
+      "deco" : "b",
+      "init" : "true",
+      "offset" : 32
+     },
+     {
+      "name" : "this",
+      "kind" : "constructor",
+      "line" : 15,
+      "char" : 2,
+      "deco" : "FC4game11commonlevel11CommonLevelC3d2d9rendering7texture7TextureS4gl3n6linalg17__T6VectorTfVii2Z6VectorS4gl3n6linalg17__T6VectorTfVii4Z6VectorS4gl3n6linalg17__T6VectorTfVii4Z6VectorZC4game6fruits6Fruits",
+      "originalType" : "(CommonLevel level, Texture tex, vec2 position, vec4 orig, vec4 destroyed)",
+      "parameters" : [
+       {
+        "name" : "level",
+        "deco" : "C4game11commonlevel11CommonLevel"
+       },
+       {
+        "name" : "tex",
+        "deco" : "C3d2d9rendering7texture7Texture"
+       },
+       {
+        "name" : "position",
+        "deco" : "S4gl3n6linalg17__T6VectorTfVii2Z6Vector"
+       },
+       {
+        "name" : "orig",
+        "deco" : "S4gl3n6linalg17__T6VectorTfVii4Z6Vector"
+       },
+       {
+        "name" : "destroyed",
+        "deco" : "S4gl3n6linalg17__T6VectorTfVii4Z6Vector"
+       }
+      ],
+      "endline" : 20,
+      "endchar" : 2
+     },
+     {
+      "name" : "interact",
+      "kind" : "function",
+      "line" : 22,
+      "char" : 16,
+      "storageClass" : [
+       "override"
+      ],
+      "deco" : "FZb",
+      "endline" : 33,
+      "endchar" : 2,
+      "overrides" : [
+       "game.interactable.Interactable.interact"
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "name" : "game.gameover",
+  "kind" : "module",
+  "file" : "source\\game\\gameover.d",
+  "members" : [
+   {
+    "name" : "d2d",
+    "kind" : "import",
+    "line" : 3,
+    "char" : 8,
+    "protection" : "private"
+   },
+   {
+    "name" : "game.scene",
+    "kind" : "import",
+    "line" : 4,
+    "char" : 8,
+    "protection" : "private"
+   },
+   {
+    "name" : "game.level1",
+    "kind" : "import",
+    "line" : 5,
+    "char" : 8,
+    "protection" : "private"
+   },
+   {
+    "name" : "ld33",
+    "kind" : "import",
+    "line" : 6,
+    "char" : 8,
+    "protection" : "private"
+   },
+   {
+    "name" : "GameOver",
+    "kind" : "class",
+    "line" : 8,
+    "char" : 1,
+    "base" : "game.scene.Scene",
+    "members" : [
+     {
+      "name" : "font",
+      "kind" : "variable",
+      "line" : 10,
+      "char" : 10,
+      "deco" : "C3d2d4font7ttffont7TTFFont",
+      "originalType" : "TTFFont",
+      "offset" : 16
+     },
+     {
+      "name" : "header",
+      "kind" : "variable",
+      "line" : 11,
+      "char" : 10,
+      "deco" : "C3d2d4font7ttftext7TTFText",
+      "originalType" : "TTFText",
+      "offset" : 20
+     },
+     {
+      "name" : "content",
+      "kind" : "variable",
+      "line" : 11,
+      "char" : 18,
+      "deco" : "C3d2d4font7ttftext7TTFText",
+      "originalType" : "TTFText",
+      "offset" : 24
+     },
+     {
+      "name" : "tip",
+      "kind" : "variable",
+      "line" : 11,
+      "char" : 27,
+      "deco" : "C3d2d4font7ttftext7TTFText",
+      "originalType" : "TTFText",
+      "offset" : 28
+     },
+     {
+      "name" : "ripAttention",
+      "kind" : "variable",
+      "line" : 12,
+      "char" : 7,
+      "deco" : "b",
+      "offset" : 32
+     },
+     {
+      "name" : "this",
+      "kind" : "constructor",
+      "line" : 14,
+      "char" : 2,
+      "deco" : "FbZC4game8gameover8GameOver",
+      "originalType" : "(bool attention)",
+      "parameters" : [
+       {
+        "name" : "attention",
+        "deco" : "b"
+       }
+      ],
+      "endline" : 17,
+      "endchar" : 2
+     },
+     {
+      "name" : "load",
+      "kind" : "function",
+      "line" : 19,
+      "char" : 16,
+      "storageClass" : [
+       "override"
+      ],
+      "deco" : "FZv",
+      "endline" : 35,
+      "endchar" : 2,
+      "overrides" : [
+       "game.scene.Scene.load"
+      ]
+     },
+     {
+      "name" : "dispose",
+      "kind" : "function",
+      "line" : 37,
+      "char" : 16,
+      "storageClass" : [
+       "override"
+      ],
+      "deco" : "FZv",
+      "endline" : 43,
+      "endchar" : 2,
+      "overrides" : [
+       "game.scene.Scene.dispose"
+      ]
+     },
+     {
+      "name" : "onEvent",
+      "kind" : "function",
+      "line" : 45,
+      "char" : 16,
+      "storageClass" : [
+       "override"
+      ],
+      "deco" : "FS3d2d6window11windowevent11WindowEventZv",
+      "originalType" : "void(Event event)",
+      "parameters" : [
+       {
+        "name" : "event",
+        "deco" : "S3d2d6window11windowevent11WindowEvent"
+       }
+      ],
+      "endline" : 53,
+      "endchar" : 2,
+      "overrides" : [
+       "game.scene.Scene.onEvent"
+      ]
+     },
+     {
+      "name" : "update",
+      "kind" : "function",
+      "line" : 55,
+      "char" : 16,
+      "storageClass" : [
+       "override"
+      ],
+      "deco" : "FfZv",
+      "parameters" : [
+       {
+        "name" : "delta",
+        "deco" : "f"
+       }
+      ],
+      "endline" : 57,
+      "endchar" : 2,
+      "overrides" : [
+       "game.scene.Scene.update"
+      ]
+     },
+     {
+      "name" : "draw",
+      "kind" : "function",
+      "line" : 59,
+      "char" : 16,
+      "storageClass" : [
+       "override"
+      ],
+      "deco" : "FC3d2d9rendering13irendertarget13IRenderTargetZv",
+      "parameters" : [
+       {
+        "name" : "target",
+        "deco" : "C3d2d9rendering13irendertarget13IRenderTarget"
+       }
+      ],
+      "endline" : 64,
+      "endchar" : 2,
+      "overrides" : [
+       "game.scene.Scene.draw"
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "name" : "game.groupmember",
+  "kind" : "module",
+  "file" : "source\\game\\groupmember.d",
+  "members" : [
+   {
+    "name" : "d2d",
+    "kind" : "import",
+    "line" : 3,
+    "char" : 8,
+    "protection" : "private"
+   },
+   {
+    "name" : "game.player",
+    "kind" : "import",
+    "line" : 5,
+    "char" : 8,
+    "protection" : "private"
+   },
+   {
+    "name" : "game.npc",
+    "kind" : "import",
+    "line" : 6,
+    "char" : 8,
+    "protection" : "private"
+   },
+   {
+    "name" : "std.random",
+    "kind" : "import",
+    "line" : 7,
+    "char" : 8,
+    "protection" : "private"
+   },
+   {
+    "name" : "GroupMember",
+    "kind" : "class",
+    "line" : 9,
+    "char" : 1,
+    "base" : "game.npc.NPC",
+    "members" : [
+     {
+      "name" : "follow",
+      "kind" : "variable",
+      "line" : 11,
+      "char" : 9,
+      "deco" : "C4game6player6Player",
+      "originalType" : "Player",
+      "offset" : 72
+     },
+     {
+      "name" : "followTime",
+      "kind" : "variable",
+      "line" : 12,
+      "char" : 8,
+      "deco" : "f",
+      "init" : "-1F",
+      "offset" : 76
+     },
+     {
+      "name" : "targetRotation",
+      "kind" : "variable",
+      "line" : 13,
+      "char" : 8,
+      "deco" : "f",
+      "init" : "0.000000F",
+      "offset" : 80
+     },
+     {
+      "name" : "walkTarget",
+      "kind" : "variable",
+      "line" : 14,
+      "char" : 7,
+      "deco" : "b",
+      "init" : "false",
+      "offset" : 84
+     },
+     {
+      "name" : "this",
+      "kind" : "constructor",
+      "line" : 16,
+      "char" : 2,
+      "deco" : "FC4game6player6PlayerZC4game11groupmember11GroupMember",
+      "originalType" : "(Player follow)",
+      "parameters" : [
+       {
+        "name" : "follow",
+        "deco" : "C4game6player6Player"
+       }
+      ],
+      "endline" : 24,
+      "endchar" : 2
+     },
+     {
+      "name" : "update",
+      "kind" : "function",
+      "line" : 26,
+      "char" : 16,
+      "storageClass" : [
+       "override"
+      ],
+      "deco" : "FfZv",
+      "parameters" : [
+       {
+        "name" : "delta",
+        "deco" : "f"
+       }
+      ],
+      "endline" : 56,
+      "endchar" : 2,
+      "overrides" : [
+       "game.npc.NPC.update"
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "name" : "game.interactable",
+  "kind" : "module",
+  "file" : "source\\game\\interactable.d",
+  "members" : [
+   {
+    "name" : "d2d",
+    "kind" : "import",
+    "line" : 3,
+    "char" : 8,
+    "protection" : "private"
+   },
+   {
+    "name" : "game.player",
+    "kind" : "import",
+    "line" : 5,
+    "char" : 8,
+    "protection" : "private"
+   },
+   {
+    "name" : "Interactable",
+    "kind" : "class",
+    "line" : 7,
+    "char" : 1,
+    "members" : [
+     {
+      "name" : "rect",
+      "kind" : "variable",
+      "line" : 9,
+      "char" : 17,
+      "deco" : "C3d2d9rendering14rectangleshape14RectangleShape",
+      "originalType" : "RectangleShape",
+      "offset" : 8
+     },
+     {
+      "name" : "this",
+      "kind" : "constructor",
+      "line" : 11,
+      "char" : 2,
+      "deco" : "FC3d2d9rendering14rectangleshape14RectangleShapeZC4game12interactable12Interactable",
+      "originalType" : "(RectangleShape rect)",
+      "parameters" : [
+       {
+        "name" : "rect",
+        "deco" : "C3d2d9rendering14rectangleshape14RectangleShape"
+       }
+      ],
+      "endline" : 14,
+      "endchar" : 2
+     },
+     {
+      "name" : "draw",
+      "kind" : "function",
+      "line" : 16,
+      "char" : 7,
+      "deco" : "FC3d2d9rendering13irendertarget13IRenderTargetZv",
+      "parameters" : [
+       {
+        "name" : "target",
+        "deco" : "C3d2d9rendering13irendertarget13IRenderTarget"
+       }
+      ],
+      "endline" : 19,
+      "endchar" : 2
+     },
+     {
+      "name" : "customIntersect",
+      "kind" : "function",
+      "line" : 21,
+      "char" : 7,
+      "deco" : "FC4game6player6PlayerZb",
+      "parameters" : [
+       {
+        "name" : "player",
+        "deco" : "C4game6player6Player"
+       }
+      ],
+      "endline" : 24,
+      "endchar" : 2
+     },
+     {
+      "name" : "interact",
+      "kind" : "function",
+      "line" : 26,
+      "char" : 16,
+      "storageClass" : [
+       "abstract"
+      ],
+      "deco" : "FZb"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "name" : "game.intro",
+  "kind" : "module",
+  "file" : "source\\game\\intro.d",
+  "members" : [
+   {
+    "name" : "d2d",
+    "kind" : "import",
+    "line" : 3,
+    "char" : 8,
+    "protection" : "private"
+   },
+   {
+    "name" : "std.file",
+    "kind" : "import",
+    "line" : 4,
+    "char" : 8,
+    "protection" : "private"
+   },
+   {
+    "name" : "game.scene",
+    "kind" : "import",
+    "line" : 5,
+    "char" : 8,
+    "protection" : "private"
+   },
+   {
+    "name" : "game.level1",
+    "kind" : "import",
+    "line" : 6,
+    "char" : 8,
+    "protection" : "private"
+   },
+   {
+    "name" : "Intro",
+    "kind" : "class",
+    "line" : 8,
+    "char" : 1,
+    "base" : "game.scene.Scene",
+    "members" : [
+     {
+      "name" : "font",
+      "kind" : "variable",
+      "line" : 10,
+      "char" : 10,
+      "deco" : "C3d2d4font7ttffont7TTFFont",
+      "originalType" : "TTFFont",
+      "offset" : 16
+     },
+     {
+      "name" : "header",
+      "kind" : "variable",
+      "line" : 11,
+      "char" : 10,
+      "deco" : "C3d2d4font7ttftext7TTFText",
+      "originalType" : "TTFText",
+      "offset" : 20
+     },
+     {
+      "name" : "content",
+      "kind" : "variable",
+      "line" : 11,
+      "char" : 18,
+      "deco" : "C3d2d4font7ttftext7TTFText",
+      "originalType" : "TTFText",
+      "offset" : 24
+     },
+     {
+      "name" : "tip",
+      "kind" : "variable",
+      "line" : 11,
+      "char" : 27,
+      "deco" : "C3d2d4font7ttftext7TTFText",
+      "originalType" : "TTFText",
+      "offset" : 28
+     },
+     {
+      "name" : "data",
+      "kind" : "variable",
+      "line" : 12,
+      "char" : 11,
+      "deco" : "AAya",
+      "offset" : 32
+     },
+     {
+      "name" : "index",
+      "kind" : "variable",
+      "line" : 13,
+      "char" : 6,
+      "deco" : "i",
+      "init" : "-1",
+      "offset" : 40
+     },
+     {
+      "name" : "load",
+      "kind" : "function",
+      "line" : 15,
+      "char" : 16,
+      "storageClass" : [
+       "override"
+      ],
+      "deco" : "FZv",
+      "endline" : 30,
+      "endchar" : 2,
+      "overrides" : [
+       "game.scene.Scene.load"
+      ]
+     },
+     {
+      "name" : "dispose",
+      "kind" : "function",
+      "line" : 32,
+      "char" : 16,
+      "storageClass" : [
+       "override"
+      ],
+      "deco" : "FZv",
+      "endline" : 39,
+      "endchar" : 2,
+      "overrides" : [
+       "game.scene.Scene.dispose"
+      ]
+     },
+     {
+      "name" : "advance",
+      "kind" : "function",
+      "line" : 41,
+      "char" : 7,
+      "deco" : "FZv",
+      "endline" : 53,
+      "endchar" : 2
+     },
+     {
+      "name" : "onEvent",
+      "kind" : "function",
+      "line" : 55,
+      "char" : 16,
+      "storageClass" : [
+       "override"
+      ],
+      "deco" : "FS3d2d6window11windowevent11WindowEventZv",
+      "originalType" : "void(Event event)",
+      "parameters" : [
+       {
+        "name" : "event",
+        "deco" : "S3d2d6window11windowevent11WindowEvent"
+       }
+      ],
+      "endline" : 59,
+      "endchar" : 2,
+      "overrides" : [
+       "game.scene.Scene.onEvent"
+      ]
+     },
+     {
+      "name" : "update",
+      "kind" : "function",
+      "line" : 61,
+      "char" : 16,
+      "storageClass" : [
+       "override"
+      ],
+      "deco" : "FfZv",
+      "parameters" : [
+       {
+        "name" : "delta",
+        "deco" : "f"
+       }
+      ],
+      "endline" : 63,
+      "endchar" : 2,
+      "overrides" : [
+       "game.scene.Scene.update"
+      ]
+     },
+     {
+      "name" : "draw",
+      "kind" : "function",
+      "line" : 65,
+      "char" : 16,
+      "storageClass" : [
+       "override"
+      ],
+      "deco" : "FC3d2d9rendering13irendertarget13IRenderTargetZv",
+      "parameters" : [
+       {
+        "name" : "target",
+        "deco" : "C3d2d9rendering13irendertarget13IRenderTarget"
+       }
+      ],
+      "endline" : 70,
+      "endchar" : 2,
+      "overrides" : [
+       "game.scene.Scene.draw"
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "name" : "game.level1",
+  "kind" : "module",
+  "file" : "source\\game\\level1.d",
+  "members" : [
+   {
+    "name" : "d2d",
+    "kind" : "import",
+    "line" : 3,
+    "char" : 8,
+    "protection" : "private"
+   },
+   {
+    "name" : "game.collectable",
+    "kind" : "import",
+    "line" : 4,
+    "char" : 8,
+    "protection" : "private"
+   },
+   {
+    "name" : "game.commonlevel",
+    "kind" : "import",
+    "line" : 5,
+    "char" : 8,
+    "protection" : "private"
+   },
+   {
+    "name" : "game.groupmember",
+    "kind" : "import",
+    "line" : 6,
+    "char" : 8,
+    "protection" : "private"
+   },
+   {
+    "name" : "game.npc",
+    "kind" : "import",
+    "line" : 7,
+    "char" : 8,
+    "protection" : "private"
+   },
+   {
+    "name" : "game.deposit",
+    "kind" : "import",
+    "line" : 8,
+    "char" : 8,
+    "protection" : "private"
+   },
+   {
+    "name" : "game.fruits",
+    "kind" : "import",
+    "line" : 9,
+    "char" : 8,
+    "protection" : "private"
+   },
+   {
+    "name" : "game.condition",
+    "kind" : "import",
+    "line" : 10,
+    "char" : 8,
+    "protection" : "private"
+   },
+   {
+    "name" : "game.scene",
+    "kind" : "import",
+    "line" : 11,
+    "char" : 8,
+    "protection" : "private"
+   },
+   {
+    "name" : "game.level2",
+    "kind" : "import",
+    "line" : 12,
+    "char" : 8,
+    "protection" : "private"
+   },
+   {
+    "name" : "Level1",
+    "kind" : "class",
+    "line" : 14,
+    "char" : 1,
+    "base" : "game.commonlevel.CommonLevel",
+    "members" : [
+     {
+      "name" : "conditions",
+      "kind" : "variable",
+      "line" : 16,
+      "char" : 14,
+      "deco" : "AC4game9condition9Condition",
+      "offset" : 120
+     },
+     {
+      "name" : "load",
+      "kind" : "function",
+      "line" : 18,
+      "char" : 16,
+      "storageClass" : [
+       "override"
+      ],
+      "deco" : "FZv",
+      "endline" : 49,
+      "endchar" : 2,
+      "overrides" : [
+       "game.commonlevel.CommonLevel.load"
+      ]
+     },
+     {
+      "name" : "prepareNext",
+      "kind" : "function",
+      "line" : 51,
+      "char" : 17,
+      "storageClass" : [
+       "override"
+      ],
+      "deco" : "FZC4game5scene5Scene",
+      "endline" : 55,
+      "endchar" : 2,
+      "overrides" : [
+       "game.commonlevel.CommonLevel.prepareNext"
+      ]
+     },
+     {
+      "name" : "conditionsMet",
+      "kind" : "function",
+      "line" : 57,
+      "char" : 16,
+      "storageClass" : [
+       "override"
+      ],
+      "deco" : "FZb",
+      "endline" : 66,
+      "endchar" : 2,
+      "overrides" : [
+       "game.commonlevel.CommonLevel.conditionsMet"
+      ]
+     },
+     {
+      "name" : "isRelevant",
+      "kind" : "function",
+      "line" : 68,
+      "char" : 16,
+      "storageClass" : [
+       "override"
+      ],
+      "deco" : "FiZb",
+      "parameters" : [
+       {
+        "name" : "id",
+        "deco" : "i"
+       }
+      ],
+      "endline" : 79,
+      "endchar" : 2,
+      "overrides" : [
+       "game.commonlevel.CommonLevel.isRelevant"
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "name" : "game.level2",
+  "kind" : "module",
+  "file" : "source\\game\\level2.d",
+  "members" : [
+   {
+    "name" : "d2d",
+    "kind" : "import",
+    "line" : 3,
+    "char" : 8,
+    "protection" : "private"
+   },
+   {
+    "name" : "game.collectable",
+    "kind" : "import",
+    "line" : 4,
+    "char" : 8,
+    "protection" : "private"
+   },
+   {
+    "name" : "game.commonlevel",
+    "kind" : "import",
+    "line" : 5,
+    "char" : 8,
+    "protection" : "private"
+   },
+   {
+    "name" : "game.groupmember",
+    "kind" : "import",
+    "line" : 6,
+    "char" : 8,
+    "protection" : "private"
+   },
+   {
+    "name" : "game.npc",
+    "kind" : "import",
+    "line" : 7,
+    "char" : 8,
+    "protection" : "private"
+   },
+   {
+    "name" : "game.deposit",
+    "kind" : "import",
+    "line" : 8,
+    "char" : 8,
+    "protection" : "private"
+   },
+   {
+    "name" : "game.fruits",
+    "kind" : "import",
+    "line" : 9,
+    "char" : 8,
+    "protection" : "private"
+   },
+   {
+    "name" : "game.condition",
+    "kind" : "import",
+    "line" : 10,
+    "char" : 8,
+    "protection" : "private"
+   },
+   {
+    "name" : "game.scene",
+    "kind" : "import",
+    "line" : 11,
+    "char" : 8,
+    "protection" : "private"
+   },
+   {
+    "name" : "game.level3",
+    "kind" : "import",
+    "line" : 12,
+    "char" : 8,
+    "protection" : "private"
+   },
+   {
+    "name" : "Level2",
+    "kind" : "class",
+    "line" : 14,
+    "char" : 1,
+    "base" : "game.commonlevel.CommonLevel",
+    "members" : [
+     {
+      "name" : "conditions",
+      "kind" : "variable",
+      "line" : 16,
+      "char" : 14,
+      "deco" : "AC4game9condition9Condition",
+      "offset" : 120
+     },
+     {
+      "name" : "load",
+      "kind" : "function",
+      "line" : 18,
+      "char" : 16,
+      "storageClass" : [
+       "override"
+      ],
+      "deco" : "FZv",
+      "endline" : 45,
+      "endchar" : 2,
+      "overrides" : [
+       "game.commonlevel.CommonLevel.load"
+      ]
+     },
+     {
+      "name" : "conditionsMet",
+      "kind" : "function",
+      "line" : 47,
+      "char" : 16,
+      "storageClass" : [
+       "override"
+      ],
+      "deco" : "FZb",
+      "endline" : 56,
+      "endchar" : 2,
+      "overrides" : [
+       "game.commonlevel.CommonLevel.conditionsMet"
+      ]
+     },
+     {
+      "name" : "prepareNext",
+      "kind" : "function",
+      "line" : 58,
+      "char" : 17,
+      "storageClass" : [
+       "override"
+      ],
+      "deco" : "FZC4game5scene5Scene",
+      "endline" : 62,
+      "endchar" : 2,
+      "overrides" : [
+       "game.commonlevel.CommonLevel.prepareNext"
+      ]
+     },
+     {
+      "name" : "isRelevant",
+      "kind" : "function",
+      "line" : 64,
+      "char" : 16,
+      "storageClass" : [
+       "override"
+      ],
+      "deco" : "FiZb",
+      "parameters" : [
+       {
+        "name" : "id",
+        "deco" : "i"
+       }
+      ],
+      "endline" : 75,
+      "endchar" : 2,
+      "overrides" : [
+       "game.commonlevel.CommonLevel.isRelevant"
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "name" : "game.level3",
+  "kind" : "module",
+  "file" : "source\\game\\level3.d",
+  "members" : [
+   {
+    "name" : "d2d",
+    "kind" : "import",
+    "line" : 3,
+    "char" : 8,
+    "protection" : "private"
+   },
+   {
+    "name" : "game.collectable",
+    "kind" : "import",
+    "line" : 4,
+    "char" : 8,
+    "protection" : "private"
+   },
+   {
+    "name" : "game.commonlevel",
+    "kind" : "import",
+    "line" : 5,
+    "char" : 8,
+    "protection" : "private"
+   },
+   {
+    "name" : "game.groupmember",
+    "kind" : "import",
+    "line" : 6,
+    "char" : 8,
+    "protection" : "private"
+   },
+   {
+    "name" : "game.npc",
+    "kind" : "import",
+    "line" : 7,
+    "char" : 8,
+    "protection" : "private"
+   },
+   {
+    "name" : "game.deposit",
+    "kind" : "import",
+    "line" : 8,
+    "char" : 8,
+    "protection" : "private"
+   },
+   {
+    "name" : "game.fruits",
+    "kind" : "import",
+    "line" : 9,
+    "char" : 8,
+    "protection" : "private"
+   },
+   {
+    "name" : "game.condition",
+    "kind" : "import",
+    "line" : 10,
+    "char" : 8,
+    "protection" : "private"
+   },
+   {
+    "name" : "game.scene",
+    "kind" : "import",
+    "line" : 11,
+    "char" : 8,
+    "protection" : "private"
+   },
+   {
+    "name" : "game.level4",
+    "kind" : "import",
+    "line" : 12,
+    "char" : 8,
+    "protection" : "private"
+   },
+   {
+    "name" : "Level3",
+    "kind" : "class",
+    "line" : 14,
+    "char" : 1,
+    "base" : "game.commonlevel.CommonLevel",
+    "members" : [
+     {
+      "name" : "conditions",
+      "kind" : "variable",
+      "line" : 16,
+      "char" : 14,
+      "deco" : "AC4game9condition9Condition",
+      "offset" : 120
+     },
+     {
+      "name" : "load",
+      "kind" : "function",
+      "line" : 18,
+      "char" : 16,
+      "storageClass" : [
+       "override"
+      ],
+      "deco" : "FZv",
+      "endline" : 45,
+      "endchar" : 2,
+      "overrides" : [
+       "game.commonlevel.CommonLevel.load"
+      ]
+     },
+     {
+      "name" : "conditionsMet",
+      "kind" : "function",
+      "line" : 47,
+      "char" : 16,
+      "storageClass" : [
+       "override"
+      ],
+      "deco" : "FZb",
+      "endline" : 56,
+      "endchar" : 2,
+      "overrides" : [
+       "game.commonlevel.CommonLevel.conditionsMet"
+      ]
+     },
+     {
+      "name" : "prepareNext",
+      "kind" : "function",
+      "line" : 58,
+      "char" : 17,
+      "storageClass" : [
+       "override"
+      ],
+      "deco" : "FZC4game5scene5Scene",
+      "endline" : 62,
+      "endchar" : 2,
+      "overrides" : [
+       "game.commonlevel.CommonLevel.prepareNext"
+      ]
+     },
+     {
+      "name" : "isRelevant",
+      "kind" : "function",
+      "line" : 64,
+      "char" : 16,
+      "storageClass" : [
+       "override"
+      ],
+      "deco" : "FiZb",
+      "parameters" : [
+       {
+        "name" : "id",
+        "deco" : "i"
+       }
+      ],
+      "endline" : 73,
+      "endchar" : 2,
+      "overrides" : [
+       "game.commonlevel.CommonLevel.isRelevant"
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "name" : "game.level4",
+  "kind" : "module",
+  "file" : "source\\game\\level4.d",
+  "members" : [
+   {
+    "name" : "d2d",
+    "kind" : "import",
+    "line" : 3,
+    "char" : 8,
+    "protection" : "private"
+   },
+   {
+    "name" : "game.collectable",
+    "kind" : "import",
+    "line" : 4,
+    "char" : 8,
+    "protection" : "private"
+   },
+   {
+    "name" : "game.commonlevel",
+    "kind" : "import",
+    "line" : 5,
+    "char" : 8,
+    "protection" : "private"
+   },
+   {
+    "name" : "game.groupmember",
+    "kind" : "import",
+    "line" : 6,
+    "char" : 8,
+    "protection" : "private"
+   },
+   {
+    "name" : "game.npc",
+    "kind" : "import",
+    "line" : 7,
+    "char" : 8,
+    "protection" : "private"
+   },
+   {
+    "name" : "game.deposit",
+    "kind" : "import",
+    "line" : 8,
+    "char" : 8,
+    "protection" : "private"
+   },
+   {
+    "name" : "game.fruits",
+    "kind" : "import",
+    "line" : 9,
+    "char" : 8,
+    "protection" : "private"
+   },
+   {
+    "name" : "game.condition",
+    "kind" : "import",
+    "line" : 10,
+    "char" : 8,
+    "protection" : "private"
+   },
+   {
+    "name" : "game.scene",
+    "kind" : "import",
+    "line" : 11,
+    "char" : 8,
+    "protection" : "private"
+   },
+   {
+    "name" : "game.endscreen",
+    "kind" : "import",
+    "line" : 12,
+    "char" : 8,
+    "protection" : "private"
+   },
+   {
+    "name" : "Level4",
+    "kind" : "class",
+    "line" : 14,
+    "char" : 1,
+    "base" : "game.commonlevel.CommonLevel",
+    "members" : [
+     {
+      "name" : "conditions",
+      "kind" : "variable",
+      "line" : 16,
+      "char" : 14,
+      "deco" : "AC4game9condition9Condition",
+      "offset" : 120
+     },
+     {
+      "name" : "load",
+      "kind" : "function",
+      "line" : 18,
+      "char" : 16,
+      "storageClass" : [
+       "override"
+      ],
+      "deco" : "FZv",
+      "endline" : 46,
+      "endchar" : 2,
+      "overrides" : [
+       "game.commonlevel.CommonLevel.load"
+      ]
+     },
+     {
+      "name" : "conditionsMet",
+      "kind" : "function",
+      "line" : 48,
+      "char" : 16,
+      "storageClass" : [
+       "override"
+      ],
+      "deco" : "FZb",
+      "endline" : 57,
+      "endchar" : 2,
+      "overrides" : [
+       "game.commonlevel.CommonLevel.conditionsMet"
+      ]
+     },
+     {
+      "name" : "prepareNext",
+      "kind" : "function",
+      "line" : 59,
+      "char" : 17,
+      "storageClass" : [
+       "override"
+      ],
+      "deco" : "FZC4game5scene5Scene",
+      "endline" : 63,
+      "endchar" : 2,
+      "overrides" : [
+       "game.commonlevel.CommonLevel.prepareNext"
+      ]
+     },
+     {
+      "name" : "isRelevant",
+      "kind" : "function",
+      "line" : 65,
+      "char" : 16,
+      "storageClass" : [
+       "override"
+      ],
+      "deco" : "FiZb",
+      "parameters" : [
+       {
+        "name" : "id",
+        "deco" : "i"
+       }
+      ],
+      "endline" : 74,
+      "endchar" : 2,
+      "overrides" : [
+       "game.commonlevel.CommonLevel.isRelevant"
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "name" : "game.npc",
+  "kind" : "module",
+  "file" : "source\\game\\npc.d",
+  "members" : [
+   {
+    "name" : "d2d",
+    "kind" : "import",
+    "line" : 3,
+    "char" : 8,
+    "protection" : "private"
+   },
+   {
+    "name" : "fx.view",
+    "kind" : "import",
+    "line" : 5,
+    "char" : 8,
+    "protection" : "private"
+   },
+   {
+    "name" : "NPC",
+    "kind" : "class",
+    "line" : 7,
+    "char" : 1,
+    "interfaces" : [
+     "d2d.rendering.idrawable.IDrawable"
+    ],
+    "members" : [
+     {
+      "name" : "pos",
+      "kind" : "variable",
+      "line" : 9,
+      "char" : 7,
+      "deco" : "S4gl3n6linalg17__T6VectorTfVii2Z6Vector",
+      "originalType" : "vec2",
+      "offset" : 8
+     },
+     {
+      "name" : "rotation",
+      "kind" : "variable",
+      "line" : 10,
+      "char" : 8,
+      "deco" : "f",
+      "init" : "0.000000F",
+      "offset" : 16
+     },
+     {
+      "name" : "tex",
+      "kind" : "variable",
+      "line" : 11,
+      "char" : 10,
+      "deco" : "C3d2d9rendering7texture7Texture",
+      "originalType" : "Texture",
+      "offset" : 20
+     },
+     {
+      "name" : "rect",
+      "kind" : "variable",
+      "line" : 12,
+      "char" : 17,
+      "deco" : "C3d2d9rendering14rectangleshape14RectangleShape",
+      "originalType" : "RectangleShape",
+      "offset" : 24
+     },
+     {
+      "name" : "path",
+      "kind" : "variable",
+      "line" : 13,
+      "char" : 9,
+      "deco" : "AS4gl3n6linalg17__T6VectorTfVii2Z6Vector",
+      "originalType" : "vec2[]",
+      "offset" : 28
+     },
+     {
+      "name" : "segment",
+      "kind" : "variable",
+      "line" : 14,
+      "char" : 6,
+      "deco" : "i",
+      "init" : "0",
+      "offset" : 36
+     },
+     {
+      "name" : "segmentTime",
+      "kind" : "variable",
+      "line" : 15,
+      "char" : 8,
+      "deco" : "f",
+      "offset" : 40
+     },
+     {
+      "name" : "iSegmentTime",
+      "kind" : "variable",
+      "line" : 16,
+      "char" : 8,
+      "deco" : "f",
+      "offset" : 44
+     },
+     {
+      "name" : "time",
+      "kind" : "variable",
+      "line" : 17,
+      "char" : 8,
+      "deco" : "f",
+      "init" : "0.000000F",
+      "offset" : 48
+     },
+     {
+      "name" : "speakTime",
+      "kind" : "variable",
+      "line" : 18,
+      "char" : 8,
+      "deco" : "f",
+      "init" : "-1F",
+      "offset" : 52
+     },
+     {
+      "name" : "spokenText",
+      "kind" : "variable",
+      "line" : 19,
+      "char" : 10,
+      "deco" : "C3d2d4font7ttftext7TTFText",
+      "originalType" : "TTFText",
+      "offset" : 56
+     },
+     {
+      "name" : "viewIndicator",
+      "kind" : "variable",
+      "line" : 20,
+      "char" : 7,
+      "deco" : "C3d2d9rendering4mesh4Mesh",
+      "originalType" : "Mesh",
+      "offset" : 60
+     },
+     {
+      "name" : "viewIndicatorShader",
+      "kind" : "variable",
+      "line" : 21,
+      "char" : 22,
+      "deco" : "C2fx4view19ViewIndicatorShader",
+      "originalType" : "ViewIndicatorShader",
+      "offset" : 64
+     },
+     {
+      "name" : "this",
+      "kind" : "constructor",
+      "line" : 23,
+      "char" : 2,
+      "deco" : "FZC4game3npc3NPC",
+      "originalType" : "()",
+      "endline" : 42,
+      "endchar" : 2
+     },
+     {
+      "name" : "this",
+      "kind" : "constructor",
+      "line" : 44,
+      "char" : 2,
+      "deco" : "FAS4gl3n6linalg17__T6VectorTfVii2Z6VectorfZC4game3npc3NPC",
+      "originalType" : "(vec2[] path, float segmentTime)",
+      "parameters" : [
+       {
+        "name" : "path",
+        "deco" : "AS4gl3n6linalg17__T6VectorTfVii2Z6Vector"
+       },
+       {
+        "name" : "segmentTime",
+        "deco" : "f"
+       }
+      ],
+      "endline" : 63,
+      "endchar" : 2
+     },
+     {
+      "name" : "getSegment",
+      "kind" : "function",
+      "line" : 65,
+      "char" : 7,
+      "deco" : "FiZS4gl3n6linalg17__T6VectorTfVii2Z6Vector",
+      "originalType" : "vec2(int segment)",
+      "parameters" : [
+       {
+        "name" : "segment",
+        "deco" : "i"
+       }
+      ],
+      "endline" : 70,
+      "endchar" : 2
+     },
+     {
+      "name" : "speak",
+      "kind" : "function",
+      "line" : 72,
+      "char" : 7,
+      "deco" : "FC3d2d4font7ttftext7TTFTextfZv",
+      "parameters" : [
+       {
+        "name" : "spokenText",
+        "deco" : "C3d2d4font7ttftext7TTFText"
+       },
+       {
+        "name" : "time",
+        "deco" : "f"
+       }
+      ],
+      "endline" : 76,
+      "endchar" : 2
+     },
+     {
+      "name" : "update",
+      "kind" : "function",
+      "line" : 78,
+      "char" : 7,
+      "deco" : "FfZv",
+      "parameters" : [
+       {
+        "name" : "delta",
+        "deco" : "f"
+       }
+      ],
+      "endline" : 92,
+      "endchar" : 2
+     },
+     {
+      "name" : "sign",
+      "kind" : "function",
+      "line" : 94,
+      "char" : 8,
+      "deco" : "FS4gl3n6linalg17__T6VectorTfVii2Z6VectorS4gl3n6linalg17__T6VectorTfVii2Z6VectorS4gl3n6linalg17__T6VectorTfVii2Z6VectorZf",
+      "originalType" : "float(vec2 p1, vec2 p2, vec2 p3)",
+      "parameters" : [
+       {
+        "name" : "p1",
+        "deco" : "S4gl3n6linalg17__T6VectorTfVii2Z6Vector"
+       },
+       {
+        "name" : "p2",
+        "deco" : "S4gl3n6linalg17__T6VectorTfVii2Z6Vector"
+       },
+       {
+        "name" : "p3",
+        "deco" : "S4gl3n6linalg17__T6VectorTfVii2Z6Vector"
+       }
+      ],
+      "endline" : 97,
+      "endchar" : 2
+     },
+     {
+      "name" : "canSee",
+      "kind" : "function",
+      "line" : 99,
+      "char" : 7,
+      "deco" : "FS4gl3n6linalg17__T6VectorTfVii2Z6VectorZb",
+      "originalType" : "bool(vec2 point)",
+      "parameters" : [
+       {
+        "name" : "point",
+        "deco" : "S4gl3n6linalg17__T6VectorTfVii2Z6Vector"
+       }
+      ],
+      "endline" : 114,
+      "endchar" : 2
+     },
+     {
+      "name" : "draw",
+      "kind" : "function",
+      "line" : 116,
+      "char" : 16,
+      "storageClass" : [
+       "override"
+      ],
+      "deco" : "FC3d2d9rendering13irendertarget13IRenderTargetC3d2d9rendering13shaderprogram13ShaderProgramZv",
+      "parameters" : [
+       {
+        "name" : "target",
+        "deco" : "C3d2d9rendering13irendertarget13IRenderTarget"
+       },
+       {
+        "name" : "shader",
+        "deco" : "C3d2d9rendering13shaderprogram13ShaderProgram",
+        "default" : "null"
+       }
+      ],
+      "endline" : 131,
+      "endchar" : 2,
+      "overrides" : [
+       "d2d.rendering.idrawable.IDrawable.draw"
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "name" : "game.player",
+  "kind" : "module",
+  "file" : "source\\game\\player.d",
+  "members" : [
+   {
+    "name" : "d2d",
+    "kind" : "import",
+    "line" : 3,
+    "char" : 8,
+    "protection" : "private"
+   },
+   {
+    "name" : "Player",
+    "kind" : "class",
+    "line" : 5,
+    "char" : 1,
+    "interfaces" : [
+     "d2d.rendering.idrawable.IDrawable"
+    ],
+    "members" : [
+     {
+      "name" : "x",
+      "kind" : "variable",
+      "line" : 7,
+      "char" : 8,
+      "deco" : "f",
+      "offset" : 8
+     },
+     {
+      "name" : "y",
+      "kind" : "variable",
+      "line" : 7,
+      "char" : 11,
+      "deco" : "f",
+      "offset" : 12
+     },
+     {
+      "name" : "xa",
+      "kind" : "variable",
+      "line" : 8,
+      "char" : 8,
+      "deco" : "f",
+      "offset" : 16
+     },
+     {
+      "name" : "ya",
+      "kind" : "variable",
+      "line" : 8,
+      "char" : 12,
+      "deco" : "f",
+      "offset" : 20
+     },
+     {
+      "name" : "tex",
+      "kind" : "variable",
+      "line" : 9,
+      "char" : 10,
+      "deco" : "C3d2d9rendering7texture7Texture",
+      "originalType" : "Texture",
+      "offset" : 24
+     },
+     {
+      "name" : "rect",
+      "kind" : "variable",
+      "line" : 10,
+      "char" : 17,
+      "deco" : "C3d2d9rendering14rectangleshape14RectangleShape",
+      "originalType" : "RectangleShape",
+      "offset" : 28
+     },
+     {
+      "name" : "rotation",
+      "kind" : "variable",
+      "line" : 11,
+      "char" : 8,
+      "deco" : "f",
+      "offset" : 32
+     },
+     {
+      "name" : "minY",
+      "kind" : "variable",
+      "line" : 12,
+      "char" : 6,
+      "deco" : "i",
+      "init" : "0",
+      "offset" : 36
+     },
+     {
+      "name" : "minX",
+      "kind" : "variable",
+      "line" : 13,
+      "char" : 6,
+      "deco" : "i",
+      "init" : "0",
+      "offset" : 40
+     },
+     {
+      "name" : "this",
+      "kind" : "constructor",
+      "line" : 15,
+      "char" : 2,
+      "deco" : "FZC4game6player6Player",
+      "originalType" : "()",
+      "endline" : 24,
+      "endchar" : 2
+     },
+     {
+      "name" : "move",
+      "kind" : "function",
+      "line" : 26,
+      "char" : 7,
+      "deco" : "FffZv",
+      "parameters" : [
+       {
+        "name" : "x",
+        "deco" : "f"
+       },
+       {
+        "name" : "y",
+        "deco" : "f"
+       }
+      ],
+      "endline" : 30,
+      "endchar" : 2
+     },
+     {
+      "name" : "update",
+      "kind" : "function",
+      "line" : 32,
+      "char" : 7,
+      "deco" : "FZv",
+      "endline" : 53,
+      "endchar" : 2
+     },
+     {
+      "name" : "intersects",
+      "kind" : "function",
+      "line" : 55,
+      "char" : 7,
+      "deco" : "FC3d2d9rendering14rectangleshape14RectangleShapeZb",
+      "parameters" : [
+       {
+        "name" : "shape",
+        "deco" : "C3d2d9rendering14rectangleshape14RectangleShape"
+       }
+      ],
+      "endline" : 58,
+      "endchar" : 2
+     },
+     {
+      "name" : "draw",
+      "kind" : "function",
+      "line" : 60,
+      "char" : 16,
+      "storageClass" : [
+       "override"
+      ],
+      "deco" : "FC3d2d9rendering13irendertarget13IRenderTargetC3d2d9rendering13shaderprogram13ShaderProgramZv",
+      "parameters" : [
+       {
+        "name" : "target",
+        "deco" : "C3d2d9rendering13irendertarget13IRenderTarget"
+       },
+       {
+        "name" : "shader",
+        "deco" : "C3d2d9rendering13shaderprogram13ShaderProgram",
+        "default" : "null"
+       }
+      ],
+      "endline" : 65,
+      "endchar" : 2,
+      "overrides" : [
+       "d2d.rendering.idrawable.IDrawable.draw"
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "name" : "game.scene",
+  "kind" : "module",
+  "file" : "source\\game\\scene.d",
+  "members" : [
+   {
+    "name" : "d2d",
+    "kind" : "import",
+    "line" : 3,
+    "char" : 8,
+    "protection" : "private"
+   },
+   {
+    "name" : "NextFunc",
+    "kind" : "alias",
+    "line" : 5,
+    "char" : 1,
+    "deco" : "DFC4game5scene5SceneZv"
+   },
+   {
+    "name" : "Scene",
+    "kind" : "class",
+    "line" : 7,
+    "char" : 1,
+    "members" : [
+     {
+      "name" : "next",
+      "kind" : "variable",
+      "line" : 9,
+      "char" : 11,
+      "deco" : "DFC4game5scene5SceneZv",
+      "originalType" : "NextFunc",
+      "offset" : 8
+     },
+     {
+      "name" : "dispose",
+      "kind" : "function",
+      "line" : 11,
+      "char" : 16,
+      "storageClass" : [
+       "abstract"
+      ],
+      "deco" : "FZv"
+     },
+     {
+      "name" : "load",
+      "kind" : "function",
+      "line" : 12,
+      "char" : 16,
+      "storageClass" : [
+       "abstract"
+      ],
+      "deco" : "FZv"
+     },
+     {
+      "name" : "onEvent",
+      "kind" : "function",
+      "line" : 13,
+      "char" : 16,
+      "storageClass" : [
+       "abstract"
+      ],
+      "deco" : "FS3d2d6window11windowevent11WindowEventZv",
+      "originalType" : "void(Event event)",
+      "parameters" : [
+       {
+        "name" : "event",
+        "deco" : "S3d2d6window11windowevent11WindowEvent"
+       }
+      ]
+     },
+     {
+      "name" : "update",
+      "kind" : "function",
+      "line" : 14,
+      "char" : 16,
+      "storageClass" : [
+       "abstract"
+      ],
+      "deco" : "FfZv",
+      "parameters" : [
+       {
+        "name" : "delta",
+        "deco" : "f"
+       }
+      ]
+     },
+     {
+      "name" : "draw",
+      "kind" : "function",
+      "line" : 15,
+      "char" : 16,
+      "storageClass" : [
+       "abstract"
+      ],
+      "deco" : "FC3d2d9rendering13irendertarget13IRenderTargetZv",
+      "parameters" : [
+       {
+        "name" : "target",
+        "deco" : "C3d2d9rendering13irendertarget13IRenderTarget"
+       }
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "name" : "ld33",
+  "kind" : "module",
+  "file" : "source\\ld33.d",
+  "members" : [
+   {
+    "name" : "d2d",
+    "kind" : "import",
+    "line" : 3,
+    "char" : 8,
+    "protection" : "private"
+   },
+   {
+    "name" : "game.scene",
+    "kind" : "import",
+    "line" : 5,
+    "char" : 8,
+    "protection" : "private"
+   },
+   {
+    "name" : "game.intro",
+    "kind" : "import",
+    "line" : 6,
+    "char" : 8,
+    "protection" : "private"
+   },
+   {
+    "name" : "game.level1",
+    "kind" : "import",
+    "line" : 7,
+    "char" : 8,
+    "protection" : "private"
+   },
+   {
+    "name" : "game.level2",
+    "kind" : "import",
+    "line" : 8,
+    "char" : 8,
+    "protection" : "private"
+   },
+   {
+    "name" : "game.level3",
+    "kind" : "import",
+    "line" : 9,
+    "char" : 8,
+    "protection" : "private"
+   },
+   {
+    "name" : "game.level4",
+    "kind" : "import",
+    "line" : 10,
+    "char" : 8,
+    "protection" : "private"
+   },
+   {
+    "name" : "game.endscreen",
+    "kind" : "import",
+    "line" : 11,
+    "char" : 8,
+    "protection" : "private"
+   },
+   {
+    "name" : "game.collectable",
+    "kind" : "import",
+    "line" : 12,
+    "char" : 8,
+    "protection" : "private"
+   },
+   {
+    "name" : "Score",
+    "kind" : "class",
+    "line" : 14,
+    "char" : 1,
+    "members" : [
+     {
+      "name" : "collected",
+      "kind" : "variable",
+      "line" : 16,
+      "char" : 23,
+      "storageClass" : [
+       "static"
+      ],
+      "deco" : "AC4game11collectable11Collectable"
+     },
+     {
+      "name" : "score",
+      "kind" : "variable",
+      "line" : 17,
+      "char" : 15,
+      "storageClass" : [
+       "static"
+      ],
+      "deco" : "f",
+      "init" : "0.000000F"
+     },
+     {
+      "name" : "penalties",
+      "kind" : "variable",
+      "line" : 18,
+      "char" : 15,
+      "storageClass" : [
+       "static"
+      ],
+      "deco" : "f",
+      "init" : "0.000000F"
+     }
+    ]
+   },
+   {
+    "name" : "LD33",
+    "kind" : "class",
+    "line" : 21,
+    "char" : 1,
+    "base" : "d2d.toolkit.game.Game",
+    "members" : [
+     {
+      "name" : "scene",
+      "kind" : "variable",
+      "line" : 23,
+      "char" : 8,
+      "deco" : "C4game5scene5Scene",
+      "originalType" : "Scene",
+      "offset" : 72
+     },
+     {
+      "name" : "this",
+      "kind" : "constructor",
+      "line" : 25,
+      "char" : 2,
+      "deco" : "FZC4ld334LD33",
+      "originalType" : "()",
+      "endline" : 27,
+      "endchar" : 2
+     },
+     {
+      "name" : "dispose",
+      "kind" : "function",
+      "line" : 29,
+      "char" : 7,
+      "deco" : "FZv",
+      "endline" : 32,
+      "endchar" : 2
+     },
+     {
+      "name" : "next",
+      "kind" : "function",
+      "line" : 34,
+      "char" : 7,
+      "deco" : "FC4game5scene5SceneZv",
+      "parameters" : [
+       {
+        "name" : "scene",
+        "deco" : "C4game5scene5Scene"
+       }
+      ],
+      "endline" : 39,
+      "endchar" : 2
+     },
+     {
+      "name" : "onEvent",
+      "kind" : "function",
+      "line" : 41,
+      "char" : 16,
+      "storageClass" : [
+       "override"
+      ],
+      "deco" : "FS3d2d6window11windowevent11WindowEventZv",
+      "originalType" : "void(Event event)",
+      "parameters" : [
+       {
+        "name" : "event",
+        "deco" : "S3d2d6window11windowevent11WindowEvent"
+       }
+      ],
+      "endline" : 44,
+      "endchar" : 2,
+      "overrides" : [
+       "d2d.toolkit.game.Game.onEvent"
+      ]
+     },
+     {
+      "name" : "start",
+      "kind" : "function",
+      "line" : 46,
+      "char" : 16,
+      "storageClass" : [
+       "override"
+      ],
+      "deco" : "FZv",
+      "endline" : 50,
+      "endchar" : 2,
+      "overrides" : [
+       "d2d.toolkit.game.Game.start"
+      ]
+     },
+     {
+      "name" : "load",
+      "kind" : "function",
+      "line" : 52,
+      "char" : 16,
+      "storageClass" : [
+       "override"
+      ],
+      "deco" : "FZv",
+      "endline" : 55,
+      "endchar" : 2,
+      "overrides" : [
+       "d2d.toolkit.game.Game.load"
+      ]
+     },
+     {
+      "name" : "update",
+      "kind" : "function",
+      "line" : 57,
+      "char" : 16,
+      "storageClass" : [
+       "override"
+      ],
+      "deco" : "FfZv",
+      "parameters" : [
+       {
+        "name" : "delta",
+        "deco" : "f"
+       }
+      ],
+      "endline" : 60,
+      "endchar" : 2,
+      "overrides" : [
+       "d2d.toolkit.game.Game.update"
+      ]
+     },
+     {
+      "name" : "draw",
+      "kind" : "function",
+      "line" : 62,
+      "char" : 16,
+      "storageClass" : [
+       "override"
+      ],
+      "deco" : "FZv",
+      "endline" : 67,
+      "endchar" : 2,
+      "overrides" : [
+       "d2d.toolkit.game.Game.draw"
+      ]
+     }
+    ]
+   },
+   {
+    "name" : "main",
+    "kind" : "function",
+    "line" : 70,
+    "char" : 6,
+    "deco" : "FZv",
+    "endline" : 75,
+    "endchar" : 1
+   }
+  ]
+ }
+]

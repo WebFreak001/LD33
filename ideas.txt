@@ -1,0 +1,74 @@
+Ideas
+-----
+
+Theme: You are the Monster
+
+* 2D Top down
+* You can carry up to 3 items (cats, garbage, quest items)
+* There is an evil deposit store in each area where you can store your evil items, just because!
+* Evil Items are marked red
+* Epic plot twist
+-> * Typical movie plot: Everyone is fighting against the evil guy but then it turns out he was the good guy and you were bad
+* Because you were bad all along, you need to do bad things without them noticing for no reason at all
+* Monster theme:
+-> * You capture kittens while running around (+20 evil)
+-> * You throw paper in the plastic bin (+2 evil)
+-> * You throw batteries in the regular bin (+3 evil)
+-> * You enter the opposite genders toilet and take a dump (+5 evil)
+-> * You swear in front of children (+5 evil)
+-> * You enter "staff only" sections for at least 3 seconds (+8 evil)
+
+* You need to move around in a group through various locations
+* There is a bar for getting seen doing bad things and one for being satisfied doing bad things
+* Making one of them go down to 0 means game over
+* 4 Levels, each getting harder
+
+"Bad" guy is making weird contraptions that seem to be capable to move the world to /dev/null
+He is actually just using it to get rid of the flies in his house.
+
+Good guys + you want to stop him and are blocked by various things.
+
+Level 1: Group is in a market and needs to get over the river. You need the following items to speed up building the bridge,
+or you wait 2 months irl: (Kinda a tutorial of game mechanics)
+- A Sandwich - acquired by talking to the sandwich guy
+- Wood - acquired in the wood store (you need money first)
+- Nails - acquired in the nail store (for reasons, you need money first)
+- String - found near a bunch of cats
+
+Level 2: Group is in a forest with a lumberjack that is willing to help them if you get these items for him:
+- A Sandwich - acquired by finding some ingredients (you cant go back because the bridge collapsed)
+- A new axe - acquired by entering konami code OR by polishing his old axe without him noticing
+- A stick - you cant break off sticks of trees because everyone else in the group is a tree lover. There are no sticks on the
+floor either.
+
+Level 3: Group is at the entry of the fort by the "bad" guy, which is watched by a guy. To get past him you need:
+- A Sandwich to distract the guy and get past.
+- Lubricant so the floor does not make a noise when going over.
+- An oven glove because the door handle is too hot to use by hand.
+
+Level 4: Group is at the bad guys /dev/null machine. Suddenly the "bad" guy comes in and you need the following items to escape:
+- A Sandwich - One of your mates cant run because he is very hungry. This should obviously help instantly.
+  However one sandwich is not correct because it has tomatoes and he doesnt like tomatoes.
+- A rope / cables - Because the fort is obviously at a very high point where its hard to get down you need some type of rope
+  (Obtained from the /dev/null machine)
+- Some thing to distract the "bad" guy because you cant search the other stuff while he is watching. But he will obviously
+  wait until you distract him, and be exactly that long distracted as you search the other stuff but then magically no longer
+
+Every time you buy a sandwich the character says: "We probably dont need more than one"
+
+
+After level 1:
+Bridge is collapsing just after you went over it.
+
+After level 2:
+Lumberjack shows way to the castle. The player could always see where it is just the characters were too stupid to walk
+there because of a invisible wall
+
+After level 3:
+Walking all these stairs gets the group fatigued.
+
+After level 4:
+Everyone is on the way down, except for you when you cut the rope, let them die and throw the "bad" guy out of the window.
+However they all survive the 50m deep fall because there is a huge marshmallow at the bottom.
+
+All points from doing bad stuff before now get counted.
