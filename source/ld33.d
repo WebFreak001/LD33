@@ -69,7 +69,14 @@ class LD33 : Game
 
 void main()
 {
-	auto game = new LD33();
-	scope (exit) core.stdc.stdlib.exit(0);
-	game.run();
+	try
+	{
+		auto game = new LD33();
+		game.run();
+	}
+	catch (Exception e)
+	{
+		throw e;
+	}
+	core.stdc.stdlib.exit(0);
 }
