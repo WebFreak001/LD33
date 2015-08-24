@@ -23,7 +23,7 @@ class EndScreen : Scene
 		header = cast(TTFText) font.render("THE END", 1.0f);
 		int score = cast(int) (Score.score * 100);
 		int penalties = cast(int) (Score.penalties * 100);
-		int bonus = Score.collected.length * 250;
+		int bonus = cast(int) (Score.collected.length * 250);
 		content = cast(TTFText) font.renderMultiline(format("Score: %s - %s + %s = %s\nItems Disposed: %s (+%s)\n\n", score, penalties, bonus, score - penalties + bonus, Score.collected.length, bonus) ~readText("res/text/end.txt"), 0.6f);
 
 		header.position = vec2(50, 75);

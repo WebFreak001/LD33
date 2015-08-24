@@ -47,7 +47,7 @@ class Intro : Scene
 			next(new Level1());
 			return;
 		}
-		int firstBR = data[index].indexOf('\n');
+		auto firstBR = data[index].indexOf('\n');
 		header.text = data[index][0 .. firstBR].strip();
 		content.text = data[index][firstBR + 1 .. $].strip();
 	}
